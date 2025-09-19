@@ -1,14 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.CalculadoraImc3" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <!-- Base application theme (usar Material Components para compatibilidad con AppCompatActivity) -->
+    <style name="Base.Theme.First_App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Personaliza colores/atributos aquí -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
     </style>
 
+    <!-- Tema del Splash -->
     <style name="Theme.App.Start" parent="Theme.SplashScreen">
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_start_foreground</item>
         <item name="windowSplashScreenBackground">@color/white</item>
-        <item name="postSplashScreenTheme">@style/Theme.CalculadoraImc3</item>
+        <item name="postSplashScreenTheme">@style/Theme.First_App</item>
     </style>
-    <style name="Theme.CalculadoraImc3" parent="Base.Theme.CalculadoraImc3" />
+
+    <!-- Tema principal (usa el base definido arriba) -->
+    <style name="Theme.First_App" parent="Base.Theme.First_App" />
 </resources>

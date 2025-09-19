@@ -66,6 +66,9 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         val records = mutableListOf<BMIRecord>()
         val db = readableDatabase
 
+        /*SELECT * FROM TABLE_BMI_RECORDS
+                WHERE COLUMN_USER_NAME = 'valor_de_userName'
+        ORDER BY COLUMN_DATE_TIME DESC;*/
         val cursor = db.query(
             TABLE_BMI_RECORDS,
             null,

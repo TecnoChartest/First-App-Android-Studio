@@ -37,7 +37,7 @@ android {
 }
 
 dependencies {
-
+    implementation("com.google.android.material:material:1.9.0")
     implementation(platform("com.google.firebase:firebase-bom:34.2.0"))
     implementation("com.google.firebase:firebase-auth")
     implementation("androidx.recyclerview:recyclerview:1.3.1")
